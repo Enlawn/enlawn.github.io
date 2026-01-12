@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeu sérieux – Linux & Windows</title>
+
+  <style>
+    /* GLOBAL */
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      margin: 0;
+      background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+      color: #eaeaea;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    /* HEADER */
+    #header {
+      background: linear-gradient(120deg, #0078d4, #00b7c3);
+      color: white;
+      text-align: center;
+      padding: 6em 1em;
+    }
+
+    #header h1 {
+      font-size: 3em;
+    }
+
+    #header p {
+      font-size: 1.2em;
+      opacity: 0.95;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: #0078d4;
+      padding: 0.9em 2em;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    /* SECTIONS */
+    .main {
+      padding: 4em 1em;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: rgba(255,255,255,0.06);
+      padding: 3em;
+      border-radius: 18px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      backdrop-filter: blur(6px);
+    }
+
+    .major h2 {
+      text-align: center;
+      font-size: 2.3em;
+      margin-bottom: 0.5em;
+      background: linear-gradient(90deg, #00c6ff, #7ee8fa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .major p {
+      text-align: center;
+      color: #cfd8dc;
+    }
+
+    /* CARDS */
+    .cards {
+      display: flex;
+      gap: 2.5em;
+      margin-top: 3em;
+    }
+
+    .os-card {
+      flex: 1;
+      padding: 2.5em;
+      border-radius: 20px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+    }
+
+    .os-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.15;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .os-card h3,
+    .os-card p,
+    .os-card ul {
+      position: relative;
+    }
+
+    .os-card ul {
+      padding-left: 1.2em;
+    }
+
+    /* WINDOWS */
+    .windows {
+      background: linear-gradient(135deg, #0a66c2, #0078d4);
+    }
+
+    .windows::before {
+      background-image: url('https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04');
+    }
+
+    /* LINUX */
+    .linux {
+      background: linear-gradient(135deg, #1b5e20, #43a047);
+    }
+
+    .linux::before {
+      background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475');
+    }
+
+    /* NEUTRAL */
+    .neutral {
+      background: linear-gradient(135deg, #37474f, #546e7a);
+    }
+
+    /* FOOTER */
+    #footer {
+      text-align: center;
+      padding: 3em 1em;
+      color: #b0bec5;
+      font-size: 0.9em;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .cards {
+        flex-direction: column;
+      }
+
+      #header h1 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <section id="header">
+    <h1>Jeu sérieux Linux & Windows</h1>
+    <p>Présentation d’un projet pédagogique pour débutants</p>
+    <a href="#intro" class="button">Découvrir</a>
+  </section>
+
+  <!-- INTRO -->
+  <section id="intro" class="main">
+    <div class="container">
+      <header class="major">
+        <h2>Qu’est-ce que ce jeu sérieux ?</h2>
+      </header>
+
+      <p>
+        Ce projet a pour objectif d’initier un public débutant à l’utilisation
+        d’un ordinateur sous Windows et Linux, quel que soit l’âge ou le niveau.
+      </p>
+
+      <p>
+        Au-delà de l’interface graphique, le jeu introduit progressivement
+        les lignes de commande, indispensables pour comprendre le fonctionnement
+        des systèmes d’exploitation modernes.
+      </p>
+    </div>
+  </section>
+
+  <!-- SYSTEMES -->
+  <section class="main">
+    <div class="container">
+      <header class="major">
+        <h2>Les systèmes étudiés</h2>
+        <p>Une découverte progressive et pédagogique</p>
+      </header>
+
+      <div class="cards">
+        <div class="os-card windows">
+          <h3>🪟 Windows</h3>
+          <p>Système grand public simple à prendre en main.</p>
+          <ul>
+            <li>Explorateur de fichiers</li>
+            <li>Bureau et paramètres</li>
+            <li>Installation de logiciels</li>
+            <li>CMD & PowerShell (bases)</li>
+          </ul>
+        </div>
+
+        <div class="os-card linux">
+          <h3>🐧 Linux</h3>
+          <p>Système libre très utilisé en informatique.</p>
+          <ul>
+            <li>Terminal et commandes</li>
+            <li>Gestion des fichiers</li>
+            <li>Permissions et utilisateurs</li>
+            <li>Distributions Linux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REALISATION -->
+  <section class="main">
+    <div class="container">
+      <header class="major">
+        <h2>Réalisation du projet</h2>
+        <p>Une organisation basée sur les compétences</p>
+      </header>
+
+      <div class="cards">
+        <div class="os-card linux">
+          <h3>🐧 Pôle Linux</h3>
+          <p>
+            Ramdane et Abdou-Lahat ont pris en charge la partie Linux :
+            terminal, commandes et contenus pédagogiques.
+          </p>
+        </div>
+
+        <div class="os-card windows">
+          <h3>🪟 Pôle Windows</h3>
+          <p>
+            Abderahamane s’est concentré sur Windows et les aspects matériels,
+            avec une approche simple et accessible.
+          </p>
+        </div>
+
+        <div class="os-card neutral">
+          <h3>👥 Expérience utilisateur</h3>
+          <p>
+            Zineb, Zyad et Mouhamed ont apporté leur expérience utilisateur
+            et contribué aux contenus pédagogiques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section id="footer">
+    <p>&copy; 2025 – Projet pédagogique Linux & Windows</p>
+  </section>
+
+</body>
+</html>
