@@ -740,7 +740,7 @@ input, select, textarea {
 							padding-top: 2em;
 						}
 
-				.row.gtr-150 {
+				.row.gtr-150 { /* réalise un padding vers la*/
 					margin-top: 0;
 					margin-left: -3em;
 				}
@@ -2001,7 +2001,7 @@ input, select, textarea {
 
 		}
 
-/* Section/Article */
+/* Section/Article */ /*////////////////////////////////////////////////////////////////////*/
 
 	section.special, article.special {
 		text-align: center;
@@ -2058,7 +2058,7 @@ input, select, textarea {
 		text-align: center;
 	}
 
-/* Form */
+/* Form */ /*////////////////////////////////////////////////////////////////////*/
 
 	form {
 		margin: 0 0 2em 0;
@@ -2242,7 +2242,7 @@ input, select, textarea {
 		opacity: 1.0;
 	}
 
-/* Box */
+/* Box *//*////////////////////////////////////////////////////////////////////*/
 
 	.box {
 		border-radius: 4px;
@@ -2263,7 +2263,7 @@ input, select, textarea {
 			padding: 0;
 		}
 
-/* Icon */
+/* Icon *//*////////////////////////////////////////////////////////////////////*/
 
 	.icon {
 		text-decoration: none;
